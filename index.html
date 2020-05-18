@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet"> <!-- font for Titles -->
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet"> <!-- font for Card -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> <!-- book logo in background-->
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div class="container-fluid bg-custom">
+            <nav class="container navbar navbar-expand-md navbar-light bg-custom">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><i class="fas fa-book-reader"></i> G's LiBRaRY</a> <!-- library logo -->
+        
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item active mr-5">
+                    <a class="nav-link" href="index.html">Library <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item mr-5">
+                    <a class="nav-link disabled" href="#">About (soon)</a>
+                  </li>
+                  <li class="nav-item mr-5">
+                    <a class="nav-link" href="mailto:LibraryOWNER@mailinator.com">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+      <div class="container">
+        <div class="col-lg-12 alert alert-primary mt-3 mb-3 text-center" role="alert">
+          <i class="fas fa-hard-hat"></i> Our about section is currently under construction. Please bear with us in the meantime. <i class="fas fa-wrench"></i>
+        </div>
+      </div>
+
+      <div class="container pt-2 text-center">
+        <img src="images/curLib3.png" class ="imgGLib">
+
+        <div class="col-12 text-center justify-content-center col-5">
+          <div style="font-size: 40px;"><i class="bookLogo fas fa-book-open display-1 mt-5 ml-5 fa-10x"></i></div>
+
+          <div class="row col-lg-12 footerFix"> <!-- footerFix was used to keep the footer automatically at the bottoom. Without it, its not at bottom of page -->
+            <div class="col"><span class="textTitles">Book List:</span><ul id="book-list" class="list-group text-primary border border-primary rounded-lg"></ul> <div id="loadSpin" class="spinner-border text-light mt-5" style="width: 15rem; height: 15rem;" role="status"><span class="sr-only">Loading...</span></div></div>
+
+            <div class="col"><span class="textTitles">Book Information:</span>
+              <div id="card" class="card border border-primary rounded-lg col-sm-12" style="width: 29rem;"> <!-- added style="width: 30rem;" for fluidity --- I also needed to add col-sm-12 to fix the centering of the cards view in small resolution (don't know why yet) -->
+                <div id="loadSpin2" class="spinner-grow text-primary m-auto" style="width: 15rem; height: 15rem;" role="status"><span class="sr-only">Loading...</span></div>
+                  <div id="cover" class="card-img-top border border-bottom" src="" alt="Card image cap"></div>
+                    <div id="card-body" class="card-body bg-light">
+                      <h5 id="card-title" class="card-title font-weight-bolder text-dark">Book data will be displayed here.</h5>
+                      <div id="card-text" class="card-text"></div>
+                      <a id="card-link" class="font-weight-bold" href="" target="_blank"></a>
+                    </div>
+              </div>
+            </div> 
+          </div>
+
+        </div>
+      </div>
+
+        <footer class="d-flex justify-content-center mt-auto">
+          <div class="d-flex justify-content-between col-md-8 col-md-offset-2 mb-1 mt-5">
+            <div class="align-left">
+        
+              <a class="font-weight-bold small kf-blue kf-links" href="https://github.com/FJChris" target="_blank">GitHub</a> |
+        
+              <a class="font-weight-bold small kf-blue kf-links" href="https://www.linkedin.com/in/chrisjfernandez/"
+                target="_blank">LinkedIn</a>
+            </div>
+            <div class="align-right font-weight-bold small">
+              G's Book Library | Copyright 2020
+            </div>
+          </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

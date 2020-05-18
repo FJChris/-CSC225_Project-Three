@@ -1,0 +1,98 @@
+.html {
+    position:relative; 
+    min-height: 100%;
+}
+
+body {
+    background-image:url("../images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+}
+
+.html, .body {
+    margin:0;
+    padding:0;
+}
+
+.navbar {
+    font-family: 'Righteous', cursive;
+}
+
+.bg-custom {
+    background-image: linear-gradient( #2c29ff 0%, #dcdaff 100%);
+}
+
+.outLine {
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.imgGLib {
+    margin: auto;
+}
+
+.textTitles {
+    font-family: 'Modak', cursive;
+    font-size: xxx-large;
+    background: -webkit-linear-gradient(rgb(67, 95, 255), rgb(167, 166, 255));
+    background-clip:none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 3.00px; 
+}
+
+.card-body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.bookLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .28;
+}
+
+.cursor-pointer {
+    cursor:pointer;
+}
+
+.hover-invert:not(.active):hover {
+    color:white;
+    background:rgb(91, 88, 255);
+}
+
+.card { 
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+img {
+    max-height: 35vh;
+}
+
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footerFix {
+    min-height: calc(100vh - 335px); /* cool fix to make sure footer text stays on bottom of page, even if other items are loaded */
+}
+
+@media (max-width: 768px) {  
+    .imgGLib {height:auto; width: 700px;}
+  }
+
+@media (max-width: 577px) {  
+    .imgGLib {height:auto; width: 500px;}
+  }
